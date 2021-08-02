@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Калькулятор</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+ </head>
+ <body>
+    <table align="center">
+        <tr>
+          <!--Поле ввода-->
+         <th colspan="4" id="field">0</th>
+        </tr>
+        <tr>
+          <!--[CA]-->
+         <td align="center" colspan="4"><button id="del" onclick="del()">CA</button></td>
+       </tr>
+       <tr>
+         <!--[+/-] [Возведение в квадрат] [Корень] [деление]-->
+        <td align="center"><button id="pom" onclick="pom()">+/-</button></td>
+        <td align="center"><button id="qua" onclick="qua()">x<sup>2</sup></button></td>
+        <td align="center"><button id="sqrt" onclick="sqrt()"><sup>2</sup>&#8730;x</button></td>
+        <td align="center"><button id="div" onclick="div()">&#247;</button></td>
+      </tr>
+      <tr>
+        <!--[7] [8] [9] [умножение]-->
+        <td align="center"><button id="seven" onclick="seven()">7</button></td>
+        <td align="center"><button id="eight" onclick="eight()">8</button></td>
+        <td align="center"><button id="nine" onclick="nine()">9</button></td>
+        <td align="center"><button id="mul" onclick="mul()">x</button></td>
+      </tr>
+      <tr>
+        <!--[4] [5] [6] [минус]-->
+        <td align="center"><button id="four" onclick="four()">4</button></td>
+        <td align="center"><button id="five"  onclick="five()">5</button></td>
+        <td align="center"><button id="six"  onclick="six()">6</button></td>
+        <td align="center"><button id="minus" onclick="minus()">-</button></td>
+      </tr>
+      <tr>
+        <!--[3] [2] [1] [Плюс]-->
+        <td align="center"><button id="one"  onclick="one()">1</button></td>
+        <td align="center"><button id="two"  onclick="two()">2</button></td>
+        <td align="center"><button id="three" onclick="three()">3</button></td>
+        <td align="center"><button id="plus"  onclick="plus()">+</button></td>
+      </tr>
+      <tr>
+        <!--[Запятая] [0] [Равно]-->
+        <td align="center"><button id="com" onclick="com()">,</button></td>
+        <td align="center" colspan="2"><button id="zero" onclick="zero()">0</button></td>
+        <td align="center"><button id="equ" onclick="equ()">=</button></td>
+      </tr>
+      </table>
+  <script src="main.js"></script>
+ </body>
+</html>
